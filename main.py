@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_samples, silhouette_score
 from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
-#from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 
 
 def local_css(file_name):
