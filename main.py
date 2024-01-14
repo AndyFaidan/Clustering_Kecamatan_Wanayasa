@@ -37,7 +37,7 @@ with st.sidebar:
 num_clusters = st.sidebar.slider("Jumlah Klaster", 2, 10, 3)
 
 # Kolom untuk pengelompokan (2011-2022)
-kolom_pengelompokan = [str(tahun) for tahun in range(2011, 2020)]
+kolom_pengelompokan = [str(tahun) for tahun in range(2011, 2022)]
 
 # Memastikan tidak ada nilai None di dalam kolom_pengelompokan
 df[kolom_pengelompokan] = df[kolom_pengelompokan].astype(float)  # Konversi ke tipe data float
@@ -122,7 +122,7 @@ elif selected == "Visualisasi Data":
 
     # Grafik Garis Pertumbuhan Penduduk untuk Setiap Klaster
     st.write("### Grafik Garis Pertumbuhan Penduduk untuk Setiap Klaster:")
-    st.write("Grafik ini menunjukkan rata-rata pertumbuhan penduduk setiap klaster dari tahun 2012 hingga 2021.")
+    st.write("Grafik ini menunjukkan rata-rata pertumbuhan penduduk setiap klaster dari tahun 2011 hingga 2022.")
 
     plt.figure(figsize=(10, 5))
     for cluster_id in range(num_clusters):
