@@ -43,7 +43,7 @@ kolom_pengelompokan = [str(tahun) for tahun in range(2011, 2023)]
 df[kolom_pengelompokan] = df[kolom_pengelompokan].astype(float)  # Konversi ke tipe data float
 
 # Kategorikan klaster berdasarkan rentang kepadatan penduduk
-population_density_ranges = [1300, 2400, 3900, np.inf]
+population_density_ranges = [1300, 2280, 3900, np.inf]
 df["Density Category"] = pd.cut(df[kolom_pengelompokan].mean(axis=1), bins=population_density_ranges, labels=["Tidak Padat", "Padat", "Sangat Padat"])
 
 # Metode Elbow untuk menentukan jumlah klaster yang optimal
