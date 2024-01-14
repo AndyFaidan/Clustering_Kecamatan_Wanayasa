@@ -37,7 +37,7 @@ with st.sidebar:
 num_clusters = st.sidebar.slider("Jumlah Klaster", 2, 10, 3)
 
 # Kolom untuk pengelompokan (2011-2022)
-kolom_pengelompokan = [str(tahun) for tahun in range(2011, 2022)]
+kolom_pengelompokan = [str(tahun) for tahun in range(2012, 2021)]
 
 # Memastikan tidak ada nilai None di dalam kolom_pengelompokan
 df[kolom_pengelompokan] = df[kolom_pengelompokan].astype(float)  # Konversi ke tipe data float
